@@ -36,9 +36,7 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
   }, [])
 
   // Get logo based on current theme
-  const logoDark = import.meta.env.VITE_STATUS_LOGO_DARK
-  const logoLight = import.meta.env.VITE_STATUS_LOGO_LIGHT
-  const logoPath = theme === 'dark' ? logoDark : logoLight
+  const logoPath = import.meta.env.VITE_STATUS_LOGO || '/logo.svg'
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur-md">
@@ -49,7 +47,7 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
               <img
                 src={logoPath}
                 alt={settings.title}
-                className="h-10 w-auto max-w-[200px] object-contain"
+                className="h-10 w-auto max-w-[200px] object-contain logo"
               />
             )}
             <h1 className="text-lg sm:text-xl font-semibold text-foreground">

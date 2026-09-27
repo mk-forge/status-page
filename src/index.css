@@ -192,6 +192,10 @@
     border-top-color: hsl(var(--foreground));
   }
 
+  html.dark .logo {
+    filter: invert(1);
+  }
+
   @keyframes tooltipFadeIn {
     to {
       opacity: 1;
