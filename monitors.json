@@ -4,34 +4,39 @@
     "name": "Portfolio",
     "url": "https://portfolio.mk-forge.workers.dev",
     "method": "GET",
-    "acceptedStatusCodes": ["200-299"]
+    "acceptedStatusCodes": ["200-299"],
+    "favicon": "/favicons/portfolio.png"
   },
   {
     "id": "set-intersection",
     "name": "Set Intersection",
     "url": "https://set-intersection.mk-forge.workers.dev",
     "method": "GET",
-    "acceptedStatusCodes": ["200-299"]
+    "acceptedStatusCodes": ["200-299"],
+    "favicon": "/favicons/set-intersection.svg"
   },
   {
     "id": "ttm-frontend",
     "name": "Table Tennis Manager (FE)",
     "url": "https://table-tennis-manager-3se.pages.dev",
     "method": "GET",
-    "acceptedStatusCodes": ["200-299"]
+    "acceptedStatusCodes": ["200-299"],
+    "favicon": "/favicons/table-tennis-manager.png"
   },
   {
     "id": "ttm-backend",
     "name": "Table Tennis Manager (BE)",
     "url": "https://ttm-backend-latest.onrender.com/players",
     "method": "GET",
-    "acceptedStatusCodes": ["200-299"]
+    "acceptedStatusCodes": ["200-299"],
+    "favicon": "/favicons/table-tennis-manager.png"
   },
   {
     "id": "ttm-db",
     "name": "Table Tennis Manager (DB)",
     "url": "https://ttm-db-check.mk-forge.workers.dev",
     "method": "GET",
-    "acceptedStatusCodes": ["200-299"]
+    "acceptedStatusCodes": ["200-299"],
+    "favicon": "/favicons/table-tennis-manager.png"
   }
 ]

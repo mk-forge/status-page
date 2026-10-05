@@ -281,21 +281,33 @@ export default function MonitorCard({ monitor, data, language, checkIntervalMinu
 
   return (
     <div className="border-b border-border last:border-0" data-monitor-id={monitor.id}>
-      <div className="px-4 py-5 sm:px-6 sm:py-6">
+      <div className="px-4 py-5 sm:px-6 sm:py-6 cursor-pointer" onClick={() => setExpanded(!expanded)}>
         <div className="flex items-start justify-between gap-4">
           <div className="flex min-w-0 flex-1 items-start gap-1.5">
             <button
-              onClick={() => setExpanded(!expanded)}
               className="min-w-0 text-left transition-opacity hover:opacity-70"
               aria-expanded={expanded}
             >
               <div className="flex items-center gap-1">
-                <h3 className="font-medium text-foreground text-sm" title={monitor.tooltip || undefined}>
-                  {monitor.name}
-                </h3>
-                <ChevronDown
+  		  {monitor.favicon && (
+    		  <img src={monitor.favicon} alt="" className="h-3.5 w-3.5 shrink-0" />
+  		)}
+  		<a
+    		  href={monitor.url}
+    		  target="_blank"
+    		  rel="noopener noreferrer"
+    		  onClick={(event) => event.stopPropagation()}
+    		  className="font-medium text-sm text-blue-500 hover:underline"
+    		  title={monitor.tooltip || undefined}
+  		>
+    		  {monitor.name}
+  		</a>
+                <ChevronDown onClick={(event) => {
+                    event.stopPropagation()
+                    setExpanded(!expanded)
+                  }}
                   className={cn(
-                    "w-3 h-3 text-muted-foreground transition-transform flex-shrink-0",
+                    "w-3 h-3 text-muted-foreground transition-transform flex-shrink-0 cursor-pointer",
                     expanded && "rotate-180"
                   )}
                 />
