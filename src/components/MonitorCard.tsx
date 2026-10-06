@@ -384,7 +384,10 @@ export default function MonitorCard({ monitor, data, language, checkIntervalMinu
             {(['1h', '24h', '7d', '30d'] as TimelinePeriod[]).map((p) => (
               <button
                 key={p}
-                onClick={() => setPeriod(p)}
+                onClick={(e) => {
+		  e.stopPropagation()
+    		  setPeriod(p)
+  		}}
                 data-period={p}
                 aria-pressed={period === p}
                 className={cn(
