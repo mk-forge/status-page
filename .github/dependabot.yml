@@ -1,17 +1,11 @@
-# Dependabot configuration
-# Updates npm dependencies weekly
-
 version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 5
     groups:
-      # Group minor/patch updates together
-      dependencies:
+      npm-minor-patch:
         patterns:
           - "*"
         update-types:
