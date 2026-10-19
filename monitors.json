@@ -30,13 +30,5 @@
     "method": "GET",
     "acceptedStatusCodes": ["200-299"],
     "favicon": "/favicons/table-tennis-manager.png"
-  },
-  {
-    "id": "ttm-db",
-    "name": "Table Tennis Manager (DB)",
-    "url": "https://ttm-db-check.mk-forge.workers.dev",
-    "method": "GET",
-    "acceptedStatusCodes": ["200-299"],
-    "favicon": "/favicons/table-tennis-manager.png"
   }
 ]
