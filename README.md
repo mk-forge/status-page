@@ -1,12 +1,12 @@
 # Status Page
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6B1EB9?logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38BDF8?logo=tailwindcss&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white)
-![Make](https://img.shields.io/badge/Make-6D00CC?logo=make&logoColor=white)
-![ntfy](https://img.shields.io/badge/ntfy-333333?logo=ntfy&logoColor=white)
+![Make](https://img.shields.io/badge/Make-6D00CD?logo=make&logoColor=white)
+![ntfy](https://img.shields.io/badge/ntfy-50B7A1?logo=ntfy&logoColor=white)
 
 Status page for my projects built on Cloudflare.
 
