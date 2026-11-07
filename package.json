@@ -26,7 +26,8 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.18.1",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "vite-plugin-purgecss": "^0.2.13"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.56.0",

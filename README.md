@@ -7,6 +7,7 @@
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white)
 ![Make](https://img.shields.io/badge/Make-6D00CD?logo=make&logoColor=white)
 ![ntfy](https://img.shields.io/badge/ntfy-50B7A1?logo=ntfy&logoColor=white)
+![PurgeCSS](https://img.shields.io/badge/PurgeCSS-14161A?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDBDNS4zNzMgMCAwIDUuMzczIDAgMTJhMTIgMTIgMCAwIDAgOS43NjQgMTEuNzkxYy4wNDgtMS4wMDMuMDUyLTIuNTUuMDQ3LTkuOTY3IDAtNS40ODQuMDAzLTkuOTk1LjAxMy0xMC4wMjMuMDI4LS4wOCAyLjI2LS4wNDIgMi42NzguMDQ3YTQuOSA0LjkgMCAwIDEgMy4wNzggMi4wOCA0LjgzNCA0LjgzNCAwIDAgMS0uNyA2LjE2NGMtLjkyNC44NzgtMi4wNDEgMS4zMzQtMy4yOSAxLjMzNC0uMjI1IDAtLjI5LjAxMi0uMzA1LjA2OC0uMDEuMDQzLS4wMiAyLjQxOC0uMDE0IDUuMjg3djUuMTk2QTEyIDEyIDAgMCAwIDEyIDI0YzYuNjI3IDAgMTItNS4zNzMgMTItMTJTMTguNjI3IDAgMTIgMG0tLjY5MSA0LjMxcS0uMDE4LjAwNC0uMDIuMDYzYy0uMDE4LjI0NS0uMDIzIDguMzU4LS4wMDQgOC4zOS4wMS4wMi4wNzUtLjAxNC4xNDUtLjA3IDIuNjczLTEuOTUyIDMuNDY3LTIuNzkyIDMuNzM4LTMuOTM5LjE0LS43NDYtLjE3NC0xLjQ2Ni0xLjAxLTIuMy0uNjk5LS43Mi0xLjY5Mi0xLjM1OC0yLjc3OS0yLjA5OS0uMDM4LS4wMzMtLjA1OC0uMDQ3LS4wNy0uMDQ0eiIvPjwvc3ZnPg==)
 
 Status page for my projects built on Cloudflare.
 
@@ -21,6 +22,7 @@ Fork of UptimeWorker with custom modifications. It monitors my projects (Portfol
 - **Storage:** Cloudflare KV
 - **Automation:** Make
 - **Notifications:** ntfy
+- **Assets:** PurgeCSS
 
 ## Website
 

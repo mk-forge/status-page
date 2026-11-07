@@ -2,6 +2,7 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import { existsSync, readFileSync } from 'fs';
+import htmlPurge from 'vite-plugin-purgecss';
 
 // Lit le port API effectif depuis .dev-api-port (écrit par dev-server.js après fallback).
 // Priorité : fichier > env API_PORT > défaut 4001.
@@ -42,6 +43,43 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       react(),
+      htmlPurge({
+        safelist: [
+          /^h-/,
+          /^w-/,
+          /^bg-/,
+          /^text-/,
+          /^border-/,
+          /^border-y/,
+          /^p-/,
+          /^px-/,
+          /^py-/,
+          /^m-/,
+          /^mb-/,
+          /^mt-/,
+          /^flex/,
+          /^flex-1/,
+          /^inline-flex/,
+          /^items-/,
+          /^items-start/,
+          /^justify-/,
+          /^gap-/,
+          /^rounded-/,
+          /^opacity-/,
+          /^transition-/,
+          /^hover:/,
+          /^dark:/,
+          /^sm:/,
+          /^min-w-/,
+          /^min-w-0/,
+          /^shrink-/,
+          /^font-/,
+          /^leading-/,
+          /^space-/,
+          /^divide-/,
+          /^accent/
+        ]
+      }),
       // Fix Cloudflare Pages build hang with Vite 6.x
       !isDev ? {
         name: 'cloudflare-pages-exit-fix',
