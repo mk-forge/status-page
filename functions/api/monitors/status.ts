@@ -87,10 +87,12 @@ export const onRequest: PagesFunction<Env> = async (context) => {
       {
         headers: {
           'Content-Type': 'application/json',
-          'Cache-Control': 'public, max-age=5',
+          'Cache-Control': 'public, max-age=30',
           'X-Content-Type-Options': 'nosniff',
           'X-Frame-Options': 'DENY',
           'X-Robots-Tag': 'noindex, nofollow',
+          'Cross-Origin-Opener-Policy': 'same-origin',
+          'Cross-Origin-Embedder-Policy': 'require-corp'
         },
       }
     )
@@ -105,7 +107,11 @@ export const onRequest: PagesFunction<Env> = async (context) => {
       }),
       {
         status: 500,
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+  	  'Cross-Origin-Opener-Policy': 'same-origin',
+  	  'Cross-Origin-Embedder-Policy': 'require-corp'
+        }
       }
     )
   }

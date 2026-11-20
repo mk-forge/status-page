@@ -232,11 +232,14 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
   res.header('Access-Control-Allow-Headers', 'Content-Type')
+  res.header('Cross-Origin-Opener-Policy', 'same-origin')
+  res.header('Cross-Origin-Embedder-Policy', 'require-corp')
   next()
 })
 
 // API Endpoint: /api/monitors/status
 app.get('/api/monitors/status', (req, res) => {
+  res.set('Cache-Control', 'no-cache')
   const monitors = KV.get('monitors', { type: 'json' }) || {}
   const lastUpdate = KV.get('lastUpdate') || new Date().toISOString()
   const maintenances = getActiveMaintenances()

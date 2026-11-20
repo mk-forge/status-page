@@ -50,6 +50,8 @@ function cronHeaders(extra: HeadersInit = {}): Headers {
   headers.set('Cache-Control', 'no-store')
   headers.set('X-Content-Type-Options', 'nosniff')
   headers.set('Content-Security-Policy', "default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+  headers.set('Cross-Origin-Opener-Policy', 'same-origin')
+  headers.set('Cross-Origin-Embedder-Policy', 'require-corp')
   return headers
 }
 
